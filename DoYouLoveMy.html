@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập do you love my</title>
+</head>
+<body>
+<div>
+    <h1>Do You Love Me !</h1>
+    <br>
+    <button type="button" id="yesButton" onclick="yesClick();" style="position: absolute; left: 80px; right: 80px">YES</button>
+    <button type="button" id="noButton" onclick="noHover()" style="position: absolute; left: 150px; right: 150px">NO</button>
+</div>
+<script>
+    function yesClick() {
+        var yes = alert('Thanks!');
+    }
+    function noHover() {
+        var x = Math.round(Math.random() * window.innerWidth);
+        var y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById('noButton').style.left = x + 'px';
+        document.getElementById('noButton').style.right = y + 'px';
+    }
+</script>
+</body>
+</html>
